@@ -43,7 +43,9 @@ In order to maximize portability of this project and reduce additional tools tha
 
 ### Submitting your work
 
-When you have completed the assignment, you can submit your fork [by scheduling a follow-up interview](https://calendly.com/andrew-hite/technical-interview). The final step of the Calendly booking process will include a prompt to enter URL of your fork. During the follow-up interview we will review your submission and dig deeper into your implementation of the project.
+When you have completed the assignment, you can submit your fork [by scheduling a follow-up interview](https://app.usemotion.com/meet/andyhite/technical-interview). The final step of the booking process will include a prompt to enter URL of your fork. During the follow-up interview we will review your submission and dig deeper into your implementation of the project.
+
+Schedule your follow-up interview here: [https://app.usemotion.com/meet/andyhite/technical-interview](https://app.usemotion.com/meet/andyhite/technical-interview)
 
 ---
 
