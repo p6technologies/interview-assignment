@@ -16,7 +16,7 @@ There are also no requirements for any user authentication, as that feature is o
 
 ## Getting started
 
-Before you begin, [create a fork of this repository](https://github.com/p6technologies/technical-assessment/fork) in your own GitHub account, and clone the forked repository to your local workspace.
+Before you begin, clone this repository to your local workspace.
 
 ### Running the application
 
@@ -43,9 +43,27 @@ In order to maximize portability of this project and reduce additional tools tha
 
 ### Submitting your work
 
-When you have completed the assignment, you can submit your fork [by scheduling a follow-up interview](https://app.usemotion.com/meet/andyhite/technical-interview). The final step of the booking process will include a prompt to enter URL of your fork. During the follow-up interview we will review your submission and dig deeper into your implementation of the project.
+When you have completed the assignment, you can submit your work by [creating a secret GitHub Gist](https://gist.github.com) of the diff and [scheduling a follow-up interview](https://app.usemotion.com/meet/andyhite/technical-interview).
 
-Schedule your follow-up interview here: [https://app.usemotion.com/meet/andyhite/technical-interview](https://app.usemotion.com/meet/andyhite/technical-interview)
+#### Step 1: Create the Gist
+
+If you have the GH CLI installed and authorized, you can run the following command to create a Gist of your diff:
+
+```bash
+git diff origin/main | gh gist create
+```
+
+Otherwise, you can create the diff manually by running the following command:
+
+```bash
+git diff origin/main > ~/Desktop/p6.patch
+```
+
+After the diff is created, you can create a Gist with the file here: https://gist.github.com.
+
+#### Step 2: Schedule the follow-up interview
+
+You can schedule a follow-up interview using the following link: [https://app.usemotion.com/meet/andyhite/technical-interview](https://app.usemotion.com/meet/andyhite/technical-interview). The final step of the booking process will include a prompt to enter the URL of the Gist you created in Step 1.
 
 ---
 
