@@ -128,7 +128,7 @@ And the fields should be pre-populated with the relevant supplier data
 
 When I change the value of a field and press the “Save Supplier” button\
 Then the modal dialog should close\
-And a message with the text “{supplier_name} has been created” should be displayed\
+And a message with the text “{supplier_name} has been updated” should be displayed\
 And the row containing the updated supplier should be updated to reflect the changes
 
 #### Failure scenario
