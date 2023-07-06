@@ -39,7 +39,7 @@ The following environment variables are available within the running application
 
 ### Installing dependencies
 
-In order to maximize portability of this project and reduce additional tools that you might need to install, it manages dependencies with Node's default package manager: `npm`. To install a new dependency, run `npm install [package]` in your local workspace and restart the Docker container (`Ctrl-C`, then run `docker-compose up` again). This will update the `package-lock.json` and trigger the Docker container to rebuild and install the new dependency. If you fail to rebuild the Docker container, the dependency will not be available in the running application.
+In order to maximize portability of this project and reduce additional tools that you might need to install, it manages dependencies with Node's default package manager: `npm`. To install a new dependency, run `npm install [package]` in your local workspace and restart the Docker container (`Ctrl-C`, then run `docker-compose up --build` again). This will update the `package-lock.json` and trigger the Docker container to rebuild and install the new dependency. If you fail to rebuild the Docker container, the dependency will not be available in the running application.
 
 ### Submitting your work
 
@@ -50,13 +50,13 @@ When you have completed the assignment, you can submit your work by [creating a 
 If you have the GH CLI installed and authorized, you can run the following command to create a Gist of your diff:
 
 ```bash
-git diff origin/main | gh gist create
+git add --all . && git diff origin/main --staged | gh gist create
 ```
 
 Otherwise, you can create the diff manually by running the following command:
 
 ```bash
-git diff origin/main > ~/Desktop/p6.patch
+git add --all . && git diff origin/main > ~/Desktop/p6.patch
 ```
 
 After the diff is created, you can create a Gist with the file here: https://gist.github.com.
